@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Quiz App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🐍 Python Quiz App</h1>
+
+    <div class="card">
+
+        <div id="difficulty"></div>
+        <div id="category"></div>
+
+        <h2 id="question">Loading...</h2>
+
+        <div class="options">
+            <button onclick="checkAnswer('A')" id="A"></button>
+            <button onclick="checkAnswer('B')" id="B"></button>
+            <button onclick="checkAnswer('C')" id="C"></button>
+            <button onclick="checkAnswer('D')" id="D"></button>
+        </div>
+
+        <div id="result"></div>
+        
+        <div id="score">✅ Correct: 0 | ❌ Wrong: 0</div>
+        <button id="nextBtn" onclick="loadQuestion()">
+            Next Question
+        </button>
+
+        <button id="aiBtn" onclick="loadAIQuestion()">
+            🤖 Generate AI Question
+        </button>
+
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
